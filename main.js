@@ -1,30 +1,38 @@
+
+
 function Capturar(){
     
     function Persona(nombre,gasto){
         this.nombre=nombre;
         this.gasto=gasto;
     }
-    var nombreCapturar = document.getElementById("nombre").value;
+    
+    let nombreCapturar = document.getElementById("nombre").value;
     // console.log(nombreCapturar);
-    var gastoCapturar = document.getElementById("gasto").value;
+    let gastoCapturar = document.getElementById("gasto").value;
     // console.log(gastoCapturar);
 
     nuevaPersona = new Persona(nombreCapturar,gastoCapturar);
-    console.log(nuevaPersona);
+    // console.log(nuevaPersona);
     agregar();
+    
+    
 }
 
 var Datos =[];
-var datosGastos=[]
+var Personas=0
+Total=0
+
 function agregar(){
+    
     Datos.push(nuevaPersona);
     console.log(Datos)
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevaPersona.nombre+'</td><td>'+ "$" + nuevaPersona.gasto+'</td></tbody> '
-function suma(){
-    datosGastos.push(nuevaPersona[i])
-    console.log(datosGastos)
-}
+    Total+= Number(nuevaPersona.gasto)
+    Personas+=1
+    console.log(Total)
+    console.log(Personas)
 
-};
+}
 
 
