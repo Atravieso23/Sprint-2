@@ -19,19 +19,24 @@ function Capturar(){
     
 }
 
-var Datos =[];
-var Personas=0
-Total=0
+let Datos =[];
+let Personas=0
+let Total=0
+let Pagar=0
 
 function agregar(){
     
     Datos.push(nuevaPersona);
     console.log(Datos)
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevaPersona.nombre+'</td><td>'+ "$" + nuevaPersona.gasto+'</td></tbody> '
-    Total+= Number(nuevaPersona.gasto)
+    Total+=Number(nuevaPersona.gasto)
     Personas+=1
-    console.log(Total)
-    console.log(Personas)
+    // console.log(Total)
+    // console.log(Personas)
+    Pagar=Total/Personas
+    // console.log(Pagar)
+    document.getElementById("Total").innerHTML= "Total: $" + Total 
+    document.getElementById("Pagar").innerHTML= "A cada uno le toca aportar: $ " + Pagar 
 
 }
 
