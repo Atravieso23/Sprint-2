@@ -36,7 +36,7 @@ function agregar(){
     Pagar=Total/Personas
     // console.log(Pagar)
     document.getElementById("Total").innerHTML= "Total: $" + Total 
-    document.getElementById("Pagar").innerHTML= "A cada uno le toca aportar: $ " + Pagar 
+    document.getElementById("Pagar").innerHTML= "A cada uno le toca aportar: $ " + Pagar.toFixed(2) 
 
 }
 
