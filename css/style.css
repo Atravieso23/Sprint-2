@@ -1,0 +1,56 @@
+body{
+    background-color:aliceblue;
+    font-size: 14px;
+}
+
+.head{
+    margin: 90px auto 0 auto;
+}
+.hero{
+    background-color: rgb(53, 114, 236);
+    color: white;
+    width: 100%;
+    height: 110px;
+}
+
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+}
+
+
+.form-box{
+    width: 80%;
+}
+
+.contenedor{
+    margin-top: 2rem;
+}
+
+.boton{
+    text-align: center;
+}
+
+.listado ul{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    list-style-type: none;
+}
+
+.listado li{
+    border: 1px solid gray;
+    padding-left: 0.7rem;
+    padding: 0.5rem 1rem;
+}
+
+.fin{
+    font-size: 1.5rem;
+    font-weight:400;
+}

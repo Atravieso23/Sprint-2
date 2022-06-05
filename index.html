@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos Combinados</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <Header class="head container-fluid form-box">
+        <div class="border hero">
+            <h1 class="titulo">App de gastos</h1>
+            <p class="subtitulo">Ingresa cuanto pago cada persona</p>
+        </div>
+        <div id="divGastos">
+            <form id="formGastos">
+                <div class="contenedor">
+                    <input type="text" id="nombre" class="form-control mb-4" placeholder="Colocar su nombre">
+                    <input type="number" id="gasto" class="form-control mb-4" placeholder="Colocar cuanto gasto">
+                </div>
+                <div class="col-12 boton">
+                    <button type="reset" id="btn" class="btn btn-danger" onclick="Capturar()">Enviar</button>
+                </div>
+            </form>
+            
+          <div class="listado" id="listado">
+              <table class="table" id="tabla">
+                  <thead class="thead-inverse">
+                      <tr>
+                          <th>Nombre</th>
+                          <th>Gasto</th>
+                      </tr>
+                  </thead>
+                                   
+                  </table>
+          </div>
+
+          <!-- <div class="fin" id="fin"> -->
+              <!-- <h2>Total: $3000</h2>
+              <h2>A cada uno le toca: $1500</h2> -->
+          <!-- </div> -->
+        </div>
+    </Header>
+    <script src="bootstrap/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
